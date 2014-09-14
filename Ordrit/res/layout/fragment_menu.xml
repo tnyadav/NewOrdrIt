@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:treeView="http://schemas.android.com/apk/lib/com.ordrit.treeview"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@color/menu_background_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_background_seperator_color"
+            android:orientation="vertical" >
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/menuAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_button_selector"
+                android:gravity="left|center_vertical"
+                android:height="@dimen/menu_button_height"
+                android:paddingLeft="@dimen/menu_text_padding_left"
+                android:text="@string/accounts"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_text_size" />
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/menuBag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/menu_button_selector"
+                android:gravity="left|center_vertical"
+                android:height="@dimen/menu_button_height"
+                android:paddingLeft="@dimen/menu_text_padding_left"
+                android:text="@string/bag"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_text_size" />
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/menuOrderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/menu_button_selector"
+                android:gravity="left|center_vertical"
+                android:height="@dimen/menu_button_height"
+                android:paddingLeft="@dimen/menu_text_padding_left"
+                android:text="@string/order_status"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_text_size" />
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/menuPreviousOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/menu_button_selector"
+                android:gravity="left|center_vertical"
+                android:height="@dimen/menu_button_height"
+                android:paddingLeft="@dimen/menu_text_padding_left"
+                android:text="@string/previous_orders"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_text_size" />
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/menuCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/menu_button_selector"
+                android:gravity="left|center_vertical"
+                android:height="@dimen/menu_button_height"
+                android:paddingLeft="@dimen/menu_text_padding_left"
+                android:text="@string/coupons"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_text_size" />
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/menuHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/menu_button_selector"
+                android:gravity="left|center_vertical"
+                android:height="@dimen/menu_button_height"
+                android:paddingLeft="@dimen/menu_text_padding_left"
+                android:text="@string/help"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_text_size" />
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/menuShoping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/menu_button_selector"
+                android:gravity="left|center_vertical"
+                android:height="@dimen/menu_button_height"
+                android:paddingLeft="@dimen/menu_text_padding_left"
+                android:text="@string/shopping_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_text_size" />
+
+            <com.ordrit.treeview.TreeViewList
+                android:id="@+id/mainTreeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:smoothScrollbar="true"
+                treeView:indicator_gravity="right|center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dark_grey_rounded_container"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textOrderDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="@string/order_details"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/order_number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textItemTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/dummy_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/addOrderToFav"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/add_order_to_fav" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dark_grey_rounded_container"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="@string/provider"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textMerchantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="2dp"
+            android:padding="3dp"
+            android:text="@string/dummy_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/addMerchantToFav"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/add_merchant_to_fav" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dark_grey_rounded_container"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textDeliveryDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="@string/delivery_details"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textDeliveringAddress"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:maxHeight="200dp"
+            android:layout_gravity="left"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="aslkdn sdnkslnd slfknslkfn sdfnslkfnsfd f sfdnlksnflsk sdf sdklfnsdlknf fdslnkfdslfknf flsnkfklsdkn"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dark_grey_rounded_container"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textPaymentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="@string/payment_info"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textPaymentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/dummy_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textTotalTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="3dp"
+            android:text="@string/dummy_text"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.ordrit.util.CalibriButton
+        android:id="@+id/buttonPlaceOrder"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/yellow_btn_style"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/place_order"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

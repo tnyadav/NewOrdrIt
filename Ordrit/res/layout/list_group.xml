@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/deep_grey"
+    android:orientation="vertical"
+    android:padding="1dp" >
+ 
+    <com.ordrit.util.CalibriTextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="@dimen/header_text_size"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/grey"
+        android:textColor="@color/blue" />
+ 
+</LinearLayout>

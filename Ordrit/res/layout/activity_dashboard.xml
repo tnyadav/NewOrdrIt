@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_launcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" >
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/leftMenuContainerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        
+       >
+
+        <FrameLayout
+            android:id="@+id/leftMenuContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+         
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            
+            android:background="@color/actionbar_background" >
+        </FrameLayout>
+
+        <View
+            android:id="@+id/shaddow"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/menu"
+            android:visibility="gone"
+            android:background="#80000000" />
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/logo_ordrit" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

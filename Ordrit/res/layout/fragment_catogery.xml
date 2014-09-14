@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/actionbar_background">
+
+         <Button
+             android:id="@+id/back"
+             android:layout_width="40dp"
+             android:layout_height="35dp"
+             android:layout_centerVertical="true"
+             android:background="@drawable/logo_ordrit" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/catogeryTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Category"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+		<RelativeLayout
+            android:id="@+id/cartContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/cartLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cart_ico" />
+		    <TextView
+                android:id="@+id/cart_item_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/cartLogo"
+                android:layout_alignRight="@+id/cartLogo"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+<com.ordrit.util.CalibriTextView
+        android:id="@+id/textCarogeryStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/empty_previous_order"
+        android:textColor="@color/counter_text_bg"
+        android:textSize="@dimen/header_text_size"
+        android:visibility="gone" />
+   
+
+    <ExpandableListView
+        android:id="@+id/catoreryListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"
+        android:layout_weight="1" >
+    </ExpandableListView>
+
+</LinearLayout>

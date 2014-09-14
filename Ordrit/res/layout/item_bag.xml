@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="#F1F1F1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageViewItemImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textProductName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/dummy_text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textItemTotal"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/edit_text_style"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="*"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp" 
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp" >
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:background="@drawable/red_btn_style"
+            android:textSize="13sp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:text="@string/remove"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:gravity="center"
+            android:background="@drawable/btn_style"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            android:text="@string/edit"
+            android:textColor="@android:color/white" />
+        <View 
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="1dp"/>
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/actionbar_background"
+            android:text="@string/dummy_text" />
+    </LinearLayout>
+
+</LinearLayout>

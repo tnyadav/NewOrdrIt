@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/actionbar_background"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addUpdateAddressBack"
+             android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_action_previous_item" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/addUpdateAddressTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/add_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+		<RelativeLayout
+            android:id="@+id/cartContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/cartLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cart_ico" />
+		    <TextView
+                android:id="@+id/cart_item_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/cartLogo"
+                android:layout_alignRight="@+id/cartLogo"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/etAddUpdateAddressHomeOrApartmentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Apartment/House Number"
+            android:maxLength="35"
+            android:padding="5dp"
+            
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null" >
+        </EditText>
+
+        <!-- <com.ordrit.util.CalibriTextView
+            android:id="@+id/txtAddUpdateAddressHomeOrApartmentNameError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" /> -->
+
+  <!--       <EditText
+            android:id="@+id/etAddUpdateAddressStreet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="@string/street_address_1"
+            android:maxLength="35"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null" >
+
+        </EditText>
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/txtAddUpdateAddressStreet1Error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" /> -->
+
+        <EditText
+            android:id="@+id/etAddUpdateAddressState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="@string/street_address_2"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:maxLength="35"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null" >
+        </EditText>
+
+        <!-- <com.ordrit.util.CalibriTextView
+            android:id="@+id/txtAddUpdateAddressStateError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/etAddUpdateAddressCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="@string/city"
+                android:focusable="false"
+                 android:clickable="true"
+                android:maxLength="20"
+                android:padding="5dp"
+               android:inputType="none"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etAddUpdateAddressZipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="@string/zipcode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- <com.ordrit.util.CalibriTextView
+            android:id="@+id/txtAddUpdateAddressCityOrZipcodeError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" /> -->
+    </LinearLayout>
+
+    <com.ordrit.util.CalibriButton
+        android:id="@+id/btnAddUpdateAddressSaveOrUpdate"
+        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/yellow_btn_style"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="dummy_text">Dummy Text</string>
+  <!--  <string name="map_key">AIzaSyCybv14nEvb6UtJxDFSVm867TzthVEsmSA</string> 
+   -->  <string name="app_name">OrdrIt</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_started">Get Started</string>
+    <string name="username">User Name</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="mobile_number">Mobile No.</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email_id">Email Id</string>
+    <string name="invalid_email">Please Enter Valid Email Id</string>
+    <string name="invalid_firstname">Please Enter Valid First Name</string>
+    <string name="invalid_lastname">Please Enter Valid Last Name</string>
+    <string name="invalid_phone_num">Please Enter Valid Phone Number</string>
+    <string name="invalid_email_or_phone_num">Please Enter Valid email_or_Phone Number</string>
+    <string name="password_error">Please Choose Password of At Least 5 Characters</string>
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="submit">Submit</string>
+    <string name="internet_connection_failed">No Internet Connection, Please Try Again Later</string>
+    <string name="empty_username_error">Username Cannot Be Left Blank</string>
+    <string name="empty_password_error">Password Cannot Be Left Blank</string>
+    <string name="unmatch_password_error">Password and Confirm Password Must Be Same</string>
+	<string name="empty_email_error">Email Id Cannot Be Left Blank</string>
+	<string name="update">Update</string>
+	<string name="sucess_regis">You Are Successfully Registered, Please Login to Continue</string>
+	<string name="add_to_bag">Add to Bag</string>
+	<string name="edit">Edit</string>
+	<string name="remove">Remove</string>
+	<string name="save">Save</string>
+	<string name="next">Next</string>
+	<string name="change_address">Change Address</string>
+	<string name="order_details">Order Details</string>
+	<string name="order_number">Order No.</string>
+	<string name="add_order_to_fav">Add this Order to my favourite</string>
+	<string name="add_merchant_to_fav">Add this Merchant to my favourite</string>
+	<string name="provider">Provider</string>
+	<string name="forgotPasswordLink">Forgot Password ??</string>
+	<string name="password_recovery">Password Recovery</string>
+	
+	
+	<!-- <string name="merchant_name">Merchant Name</string> -->
+	<string name="delivery_details">Delivery Details</string>
+	<string name="payment_info">Payment Info</string>
+	<string name="place_order">Place Order</string>
+	<string name="thank_you">Thank You !</string>
+	<string name="order_confirmation_msg">You will receive a notification once the order is out for delivery \n\nKeep calm and carry on.</string>
+	<string name="home">Home</string>
+	<string name="apartment">Apartment</string>
+	<string name="home_or_apartment_name">Home/Apartment Name</string>
+	<string name="street_address_1">Street address 1</string>
+	<string name="street_address_2">State</string>
+	<string name="city">City</string>
+	<string name="zipcode">Zip code</string>
+	<string name="empty_bag">Bag is empty</string>
+	<string name="empty_order">No Order Found</string>
+	<string name="empty_previous_order">No Previous Order Found</string>
+    <string name="grocery_msg"><![CDATA[<center>
+			Your <span><font color="#94C57E">Grocery</font></span> is here<br></center>
+		<center>
+			]]></string>
+			
+    <string name="grocery_sub_msg"><![CDATA[<center>
+			Your <span><font color="#94C57E">Friendly Neighbourhood store</font></span> is here<br></center>
+		<center>
+			]]></string>
+			
+    <string name="sign_up_link"><![CDATA[<center>
+			<span><b>Sign Up</b></span> For a new account<br></center>
+		<center>
+			]]></string>
+			
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="username_field_empty">Username cannot be left blank</string>
+    <string name="email_field_invalid">Email id is invalid</string>
+    <string name="ph_num_invalid">Phone number is invalid</string>
+    <string name="password_field_empty">Password field cannot be left blank</string>
+    <string name="share_merchant_with_your_local_friend ">Share Merchant With Your Local Friend</string>
+    <string name="add_your_address ">Add Your Address</string>
+    <string name="cash_on_delivery ">Cash On Delivery</string>
+    <string name="credit_card ">Credit Card</string>
+    <string name="order_status">Order Status</string>
+    <string name="pending_order">Order Pending</string>
+    
+   
+    <!-- drawer resource -->
+     <string name="accounts">My Accounts</string>
+     <string name="bag">My Bag</string>
+     <string name="pendingOrderStatusTitle">Order Status</string>
+     <string name="previous_orders">Previous Orders</string>
+     <string name="coupons">Coupons</string>
+     <string name="help">Help &amp; Faq</string>
+     <string name="shopping_in">Shopping in Andheri / Mumbai....</string>
+     <string name="my_account">My Account</string>
+     <string name="manage_accounts">Manage your account</string>
+     <string name="manage_addresses">Manage your address</string>
+     <string name="my_addresses">My Address</string>
+     <string name="add_note_for_item"> Add note for this item</string>
+   
+     <!-- button resource -->
+     <string name="checkout">Checkout</string>
+     
+     <!-- title text resource -->
+     <string name="add_address">Add Address</string> 
+      <string name="add_store">Add Store</string> 
+     <string name="update_account">Update Account</string> 
+         <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+         <item >Home</item>
+        <item >My Account</item>
+        <item >My Bag</item>
+        <item >Order Status</item>
+        <item >Previous Orders</item>
+       <!--  <item >Coupons</item> -->
+        <item >Help &amp; Faq</item>
+       <!--   <item >Shopping in Andheri / Mumbai....</item> -->
+    </string-array>
+    
+    
+    <integer-array name="nav_drawer_id">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>  
+        <item >5</item>
+    </integer-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ico1</item>
+        <item>@drawable/ico2</item>
+        <item>@drawable/ico3</item>
+        <item>@drawable/ico4</item>
+        <item>@drawable/ico6</item>
+       <!--  <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item> -->
+    </array>
+</resources>

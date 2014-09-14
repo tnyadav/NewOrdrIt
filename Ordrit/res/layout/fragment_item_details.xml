@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/actionbar_background" >
+
+        <Button
+            android:id="@+id/itemDetailBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_action_previous_item" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/catogeryTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Item Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/cartContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/cartLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cart_ico" />
+
+            <TextView
+                android:id="@+id/cart_item_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/cartLogo"
+                android:layout_alignRight="@+id/cartLogo"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/dummy_text"
+            android:textColor="@color/actionbar_background"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewItemImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:padding="5dp" />
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="@string/dummy_text"
+            android:textColor="@color/actionbar_background" />
+
+       
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/downButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_style"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberEditText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                 android:textSize="@dimen/header_text_size"
+                android:editable="false"
+                android:gravity="center"
+                android:inputType="none"
+                android:text="1" >
+            </EditText>
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/upButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_style"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.ordrit.util.CalibriButton
+            android:id="@+id/buttonAddToBagOrder"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_style"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/add_to_bag"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

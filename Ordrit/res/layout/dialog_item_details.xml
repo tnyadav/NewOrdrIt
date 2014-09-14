@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+         >
+
+        <com.ordrit.util.CalibriTextView
+            android:id="@+id/textItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="@string/dummy_text"
+            android:textColor="@color/actionbar_background"
+            android:background="@color/grey"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewItemImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <com.ordrit.util.CalibriTextView
+                android:id="@+id/itemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/dummy_text"
+                android:textColor="@color/actionbar_background" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/downButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_style"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numberEditText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                 android:textSize="@dimen/header_text_size"
+                android:editable="false"
+                android:gravity="center"
+                android:inputType="none"
+                android:text="1" >
+            </EditText>
+
+            <com.ordrit.util.CalibriButton
+                android:id="@+id/upButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_style"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <com.ordrit.util.CalibriButton
+            android:id="@+id/buttonAddToBagOrder"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_style"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/add_to_bag"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>

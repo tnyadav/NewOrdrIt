@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewNetworkText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/networkicon" />
+
+    <TextView
+        android:id="@+id/textViewNetworkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Ordrit can’t be reached right Now , Please check you Internet Setting"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/default_text_size"
+        android:textStyle="bold" />
+
+    <com.ordrit.util.CalibriButton
+        android:id="@+id/buttonNetworkRetry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewNetworkText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/red_btn_style"
+        android:minHeight="40dip"
+        android:text="Retry"
+        android:textColor="@android:color/white" />
+
+<com.ordrit.util.CalibriButton
+    android:id="@+id/buttonNetworkExit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/buttonNetworkRetry"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/red_btn_style"
+    android:minHeight="40dip"
+     android:text="Exit"
+    android:textColor="@android:color/white" />
+
+</RelativeLayout>
